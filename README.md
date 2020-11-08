@@ -1,6 +1,6 @@
 # Social Wall - Memories App using MERN Stack
 
-A social wall application with all CRUD functionalities built using React+Redux frontend, ExpressJS backend and MongoDB database. This repo contains the source code for the client side application. For the backend, click [here]()
+A social wall application with all CRUD functionalities built using React+Redux frontend, ExpressJS backend and MongoDB database. This repo contains the source code for the client side application. For the backend, click [here](https://github.com/nitish-chandra-m/memories-app-server)
 
 ![Screenshot](https://i.ibb.co/6n8mGkK/Screenshot.jpg)
 
