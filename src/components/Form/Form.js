@@ -28,12 +28,22 @@ function Form({ currentId, setCurrentId }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (currentId) {
-      dispatch(updatePost(currentId, postData));
+    if (
+      postData.creator.length !== 0 &&
+      postData.title.length !== 0 &&
+      postData.message.length !== 0 &&
+      postData.tags.length !== 0 &&
+      postData.selectedFile.length !== 0
+    ) {
+      if (currentId) {
+        dispatch(updatePost(currentId, postData));
+      } else {
+        dispatch(createPost(postData));
+      }
+      clear();
     } else {
-      dispatch(createPost(postData));
+      window.alert("Please fill all the fields in the form");
     }
-    clear();
   };
 
   const clear = () => {
